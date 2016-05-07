@@ -1,6 +1,10 @@
 body {
     background-color: rgba(0, 0, 0, 0.01);
 }
+.one {
+    width: 100%;
+    height: auto;
+}
 .bx-container {
     position: fixed;
     top: 0px;
@@ -15,7 +19,7 @@ body {
     left: 0px;
     width: 100%;
     z-index: 101;
-    /*    display: none;*/
+    /*        display: none;*/
 }
 .bx-canvas {
     position: absolute;
@@ -23,8 +27,6 @@ body {
     left: 0px;
     width: 100%;
 }
-
-/*
 .bx-overlay,
 .bx-loading {
     width: 100%;
@@ -32,11 +34,9 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    background: transparent url(../images/pattern.png) repeat top left;
+        background: transparent url(../images/pattern.png) repeat top left;
     z-index: 10;
 }
-*/
-
 .bx-loading {
     z-index: 9999;
     background: #000;
