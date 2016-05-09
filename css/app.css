@@ -1,3 +1,6 @@
+@import "compass/css3";
+@import url(//fonts.googleapis.com/css?family=Oswald:300);
+
 /* the navigation*/
 
 
@@ -1135,4 +1138,54 @@ support for no js
     transform: scaleY(1.155) skewX(-30deg) rotate(30deg) scaleX(.433);
 }
 
+/*The animated button in the hexagon*/
+
+a.animBtn:link,
+a.animBtn:visited {
+    /*    position: relative;*/
+    position: absolute;
+    display: block;
+    width: 180px;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    &:after {
+        content: "";
+        position: relative;
+        /*        position: absolute;*/
+        background: none repeat scroll 0 0 #fff;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        -webkit-transition: all .3s ease 0s;
+        -moz-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+    }
+    &:hover {
+        color: #333;
+        text-shadow: none;
+        &:after {
+            height: 420%;
+        }
+    }
 }
+a.themeB:after {
+    @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+}
+
+/*End of animated button*/
