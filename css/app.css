@@ -1023,7 +1023,6 @@ Main components
                     font-weight: 300;
                 }
             }
-            .bg-img {}
             /*
 .cd-overlay {
      shadow layer visible when navigation is active
@@ -1210,9 +1209,14 @@ float: right;
                 display: block;
             }
 */
+            /*            the second row format*/
 
-            the second row {
+            .fronter {
+                width: 100%;
+                height: 800px;
+            }
+            .two {
                 width: 100%;
                 height: 500px;
-                background-color: rgba(0, 0, 0, 0.21);
+                background-image: url(../img/bg2.jpg);
             }
