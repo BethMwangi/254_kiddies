@@ -27,12 +27,13 @@ body {
     }
 }
 a {
-    color: #69aa6f;
+    color: crimson;
     text-decoration: none;
 }
 img {
+    width: 60%;
     /* make images responsive */
-    max-width: 100%;
+    /*    max-width: 100%;*/
 }
 input {
     font-family: sans-serif;
@@ -96,7 +97,7 @@ Main components
     z-index: 2;
 }
 .cd-main-header {
-    height: 50px;
+    height: 80px;
     background: #ffffff;
     z-index: 3;
 }
@@ -119,7 +120,6 @@ Main components
 }
 .cd-logo {
     position: absolute;
-    top: 12px;
     left: 5%;
 }
 .cd-logo img {
@@ -1021,8 +1021,11 @@ Main components
         font-weight: 300;
     }
 }
+.bg-img {}
+
+/*
 .cd-overlay {
-    /* shadow layer visible when navigation is active */
+     shadow layer visible when navigation is active
     position: fixed;
     z-index: 2;
     height: 100%;
@@ -1030,7 +1033,7 @@ Main components
     top: 0;
     left: 0;
     cursor: pointer;
-    background-color: rgba(105, 170, 111, 0.8);
+        background-color: rgba(105, 170, 111, 0.8);
     visibility: hidden;
     opacity: 0;
     -webkit-backface-visibility: hidden;
@@ -1039,6 +1042,10 @@ Main components
     -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
     transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
 }
+*/
+
+
+/*************
 .cd-overlay.is-visible {
     opacity: 1;
     visibility: visible;
@@ -1046,6 +1053,8 @@ Main components
     -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s;
     transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s;
 }
+*********/
+
 @media only screen and (max-width: 1169px) {
     .cd-overlay.is-visible {
         -webkit-transform: translateX(-260px);
@@ -1104,4 +1113,26 @@ support for no js
     .no-js .nav-is-fixed .cd-primary-nav {
         position: fixed;
     }
+}
+
+/* the hexagon content shape*/
+
+.hexagon {
+    margin-left: 30%;
+    margin-top: -25%;
+    padding-left: 60%;
+    /*    padding-top: 10%;*/
+    position: relative;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    transform: skewX(30deg) scaleY(.433);
+    content: "";
+    background: crimson;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg) scaleX(.433);
+}
+
 }
