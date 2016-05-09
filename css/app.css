@@ -1120,30 +1120,34 @@ support for no js
 
 /* the hexagon content shape*/
 
-.hexagon {
-    margin-left: 30%;
+.square-rotate {
+    margin-left: 52%;
     margin-top: -25%;
-    padding-left: 60%;
+    /*    padding-left: 60%;*/
     /*    padding-top: 10%;*/
     position: relative;
+    /*
     width: 2em;
     height: 2em;
+*/
     overflow: hidden;
-    transform: skewX(30deg) scaleY(.433);
+    transform: rotate(45deg);
     content: "";
     background: crimson;
     position: absolute;
-    width: 30%;
-    height: 30%;
-    transform: scaleY(1.155) skewX(-30deg) rotate(30deg) scaleX(.433);
+    width: 20%;
+    height: 34%;
 }
 
 /*The animated button in the hexagon*/
 
+.btn {
+    margin-left: 20%;
+    margin-top: -20%;
+}
 a.animBtn:link,
 a.animBtn:visited {
-    /*    position: relative;*/
-    position: absolute;
+    position: relative;
     display: block;
     width: 180px;
     margin: 30px auto 0;
@@ -1161,30 +1165,29 @@ a.animBtn:visited {
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    &:after {
-        content: "";
-        position: relative;
-        /*        position: absolute;*/
-        background: none repeat scroll 0 0 #fff;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        width: 100%;
-        z-index: -1;
-        -webkit-transition: all .3s ease 0s;
-        -moz-transition: all .3s ease 0s;
-        -o-transition: all .3s ease 0s;
-        transition: all .3s ease 0s;
-    }
-    &:hover {
-        color: #333;
-        text-shadow: none;
-        &:after {
-            height: 420%;
-        }
-    }
 }
-a.themeB:after {
+a.animBtn:after {
+    content: "";
+    position: absolute;
+    background: none repeat scroll 0 0 #fff;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+a.animBtn:hover {
+    color: #333;
+    text-shadow: none;
+}
+a.animBtn:after {
+    height: 420%;
+}
+a.animBtn.themeB:after {
     @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
 }
 
