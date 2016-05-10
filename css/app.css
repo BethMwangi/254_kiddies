@@ -35,11 +35,12 @@ Primary style
             color: crimson;
             text-decoration: none;
         }
-        img {
+        span {
             width: 60%;
             /* make images responsive */
             /*    max-width: 100%;*/
         }
+
         input {
             font-family: sans-serif;
             font-size: 1.6rem;
@@ -1144,7 +1145,7 @@ support for no js
         /*The animated button in the hexagon*/
 
         .btn {
-            margin-left: 20%;
+            margin-left: 40%;
             margin-top: -20%;
         }
         a.animBtn:link,
@@ -1216,10 +1217,10 @@ float: right;
 */
         /*            the second row format*/
 
+
         .fronter {
             width: 100%;
             background-color: whitesmoke;
-
         }
         .three {
             width: 100%;
