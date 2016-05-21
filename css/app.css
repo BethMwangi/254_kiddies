@@ -1337,3 +1337,24 @@ h1:before {
     text-transform: uppercase;
     font-size: 10em;
 }
+
+/*second column of fourt
+row with offer */
+
+.sec {
+    width: 40%;
+    height: 500px;
+    padding-top: 10%;
+    background-color: gray;
+    text-align: center;
+}
+.num-offer {
+    font-size: 10em;
+    color: whitesmoke;
+}
+span {
+    font-size: 5em;
+}
+.off {
+    color: whitesmoke;
+}
