@@ -1308,5 +1308,32 @@ h1:before {
 .four {
     width: 100%;
     height: 500px;
-    background-image: url(../img/bg2.jpg);
+}
+
+/*
+.first {
+    width: 50%;
+    height: 500px;
+}
+*/
+
+.overlay {
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    z-index: 10;
+    background-color: black;
+}
+.offer {
+    color: whitesmoke;
+    font-size: 200%;
+    font-size: 7em;
+    padding-top: 12%;
+    font-family: 'Dancing Script', cursive;
+    padding-left: 30%;
+}
+.caps {
+    color: crimson;
+    text-transform: uppercase;
+    font-size: 10em;
 }
