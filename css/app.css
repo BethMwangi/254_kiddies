@@ -1360,3 +1360,11 @@ span {
     color: whitesmoke;
     font-size: 10em;
 }
+
+/*COLLECTIONS PAGE WITH ALL THE PRODUCTS ON SALE*/
+
+.collection {
+    width: 100%;
+    height: 800px;
+    background-color: whitesmoke;
+}
