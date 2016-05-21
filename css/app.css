@@ -1368,3 +1368,7 @@ span {
     height: 800px;
     background-color: whitesmoke;
 }
+.product {
+    width: 100%;
+    height: auto;
+}
