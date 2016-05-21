@@ -606,7 +606,7 @@ Main components
         height: 80px;
         line-height: 80px;
         padding: 0 10px;
-        color: crimson;
+        color: black;
         overflow: visible;
         border-bottom: none;
         -webkit-transition: color 0.3s, box-shadow 0.3s;
@@ -614,11 +614,11 @@ Main components
         transition: color 0.3s, box-shadow 0.3s;
     }
     .cd-primary-nav > li > a:hover {
-        color: #69aa6f;
+        color: crimson;
     }
     .cd-primary-nav > li > a.selected {
-        color: #69aa6f;
-        box-shadow: inset 0 -2px 0 #69aa6f;
+        color: crimson;
+        box-shadow: inset 0 -2px 0 crimson;
     }
     .cd-primary-nav .go-back,
     .cd-primary-nav .see-all {
@@ -668,7 +668,7 @@ Main components
         left: 0;
         bottom: 0;
         height: 80px;
-        width: 70%;
+        width: 100%;
         overflow: hidden;
         /* reset some inherited style */
         margin: 0 auto;
@@ -722,7 +722,7 @@ Main components
     }
     .cd-primary-nav .cd-secondary-nav > li > a {
         /* secondary nav title */
-        color: #69aa6f;
+        color: crimson;
         font-weight: bold;
         font-size: 1.6rem;
         margin-bottom: .6em;
