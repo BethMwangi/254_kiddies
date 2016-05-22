@@ -1389,10 +1389,10 @@ span {
     height: auto;
     background-color: whitesmoke;
 }
-.products {
+.products     {
     list-style-type: none;
     /*    display: inline-block;*/
-    padding: 2%;
+    /*    padding: 2%;*/
 }
 .products img {
     width: 250px;
@@ -1402,7 +1402,11 @@ span {
 .products ul {
     text-decoration: none;
 }
-.products li {
-    padding: 2%;
-    display: inline;
+.products ul li {
+        padding: 2%;
+    display: inline-block;
+}
+.prod-detail {
+    color: black;
+    text-align: center;
 }
