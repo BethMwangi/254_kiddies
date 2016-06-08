@@ -1292,16 +1292,59 @@ support for no js
 
 /*THE BEST SELLER ROW CONTAINS PRODUCT CATALOGUE */
 
-.two {
+.best-seller {
     width: 100%;
-    height: 700px;
-    background-color: darkgray;
+    height: 70px;
+    background-color: whitesmoke;
     text-align: center;
 }
 
+.catalogue {
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+}
+
 .new {
-    color: whitesmoke;
+    color: black;
     font-size: 4em;
+}
+
+.arrival {
+    width: 100%;
+    height: 300px;
+}
+
+.items {
+    width: 100%;
+    height: 300px;
+}
+
+.item {
+    height: 400px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.prod1 {
+    background-image: url(../img/bluegreen.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 90%;
+}
+
+.prod2 {
+    background-image: url(../img/bluegreen.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 90%;
+}
+
+.prod3 {
+    background-image: url(../img/bluegreen.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 90%;
 }
 
 
