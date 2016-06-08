@@ -1265,87 +1265,41 @@ support for no js
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+
+/* the overlay on big cover image */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10;
+    /*
+    width: 100%;
+    height: 100%;
+*/
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.title h1 span {
+    color: crimson;
 }
 
 
 /*
  * ==== losange. the first diamond
  */
-
-.head-tag {
-    padding-top: 2%;
-    width: 100%;
-    height: 20px;
-    background-color: whitesmoke;
-}
-
-h1 {
-    position: relative;
-    text-align: center;
-}
-
-h1 span {
-    background: #fff;
-    color: black;
-    padding: 0 50px;
-    position: relative;
-    z-index: 1;
-}
-
-h1:before {
-    background: #ddd;
-    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-h1:before {
-    left: 0;
-}
-
-.shoes {
-    padding-top: 10%;
-}
-
-.diamond-one {
-    margin-left: 18%;
-}
-
-.losange,
-.diaz,
-.diaz .diaz,
-.losange div {
-    transform-origin: 50% 50%;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
-}
-
-.losange,
-.diaz {
-    transform: rotate(45deg) translateY(10px);
-}
-
-.diaz .los1,
-.losange .los1 {
-    width: 355px;
-    height: 355px;
-    transform: rotate(-45deg) translateY(-74px);
-}
-
-.diaz .los1 img,
-.losange .los1 img {
-    width: 100%;
-    height: 90%;
-}
-
-.four {
-    width: 100%;
-    height: 500px;
-}
 
 
 /*
@@ -1354,29 +1308,6 @@ h1:before {
     height: 500px;
 }
 */
-
-.overlay {
-    position: absolute;
-    width: 60%;
-    height: 500px;
-    z-index: 1;
-    padding-top: 12%;
-    background-color: black;
-}
-
-.offer {
-    color: whitesmoke;
-    font-size: 200%;
-    font-size: 7em;
-    font-family: 'Dancing Script', cursive;
-    padding-left: 30%;
-}
-
-.caps {
-    color: crimson;
-    text-transform: uppercase;
-    font-size: 10em;
-}
 
 
 /*second column of fourt
