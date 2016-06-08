@@ -6,6 +6,7 @@
     margin: 0 auto;
 }
 
+
 /* the navigation*/
 
 
@@ -20,43 +21,60 @@ Primary style
 *::before {
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-size: 1.6rem;
     font-family: sans-serif;
     color: #2e3233;
     background-color: #ffffff;
 }
+
+.fullwidth {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
 @media only screen and (max-width: 1169px) {
     body.nav-on-left.overflow-hidden {
         overflow: hidden;
     }
 }
+
 a {
     color: crimson;
     text-decoration: none;
 }
+
 span {
     width: 60%;
     /* make images responsive */
     /*    max-width: 100%;*/
 }
+
 input {
     font-family: sans-serif;
     font-size: 1.6rem;
 }
+
 input[type="search"]::-ms-clear {
     /* removes close icon - IE */
     display: none;
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
+
 
 /* --------------------------------
 
@@ -67,6 +85,7 @@ Main components
 .bg-img {
     width: 100%;
 }
+
 .cd-main-content,
 .cd-main-header {
     /* Force Hardware Acceleration in WebKit */
@@ -77,6 +96,7 @@ Main components
     transform: translateZ(0);
     will-change: transform;
 }
+
 .cd-main-content,
 .cd-main-header {
     position: relative;
@@ -84,6 +104,7 @@ Main components
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
 }
+
 @media only screen and (max-width: 1169px) {
     .cd-main-content.nav-is-visible,
     .cd-main-header.nav-is-visible {
@@ -102,21 +123,25 @@ Main components
         transform: translateX(260px);
     }
 }
+
 .cd-main-content {
     background: #e2e3df;
     min-height: 100vh;
     z-index: 2;
 }
+
 .cd-main-header {
     height: 140px;
     background: #ffffff;
     z-index: 3;
 }
+
 .hd-head {
     background: #ffffff;
     width: 100%;
     height: 120px;
 }
+
 .nav-is-fixed .cd-main-header {
     /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
     position: fixed;
@@ -124,6 +149,7 @@ Main components
     left: 0;
     width: 100%;
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-main-header {
         height: 80px;
@@ -134,35 +160,42 @@ Main components
         display: table;
     }
 }
+
 .cd-logo {
     position: absolute;
     left: 5%;
     z-index: 10;
 }
+
 .cd-logo img {
     display: block;
 }
+
 @media only screen and (max-width: 1169px) {
     .nav-on-left .cd-logo {
         left: auto;
         right: 5%;
     }
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-logo {
         top: 26px;
         left: 4em;
     }
 }
+
 .cd-header-buttons {
     position: absolute;
     display: inline-block;
     top: 3px;
     right: 5%;
 }
+
 .cd-header-buttons li {
     display: inline-block;
 }
+
 @media only screen and (max-width: 1169px) {
     .nav-on-left .cd-header-buttons {
         right: auto;
@@ -172,12 +205,14 @@ Main components
         float: right;
     }
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-header-buttons {
         top: 18px;
         right: 4em;
     }
 }
+
 .cd-search-trigger,
 .cd-nav-trigger {
     position: relative;
@@ -190,6 +225,7 @@ Main components
     color: transparent;
     z-index: 3;
 }
+
 .cd-search-trigger::before,
 .cd-search-trigger::after {
     /* search icon */
@@ -207,6 +243,7 @@ Main components
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .cd-search-trigger::before {
     /* lens */
     top: 11px;
@@ -216,6 +253,7 @@ Main components
     border-radius: 50%;
     border: 3px solid #2e3233;
 }
+
 .cd-search-trigger::after {
     /* handle */
     height: 3px;
@@ -229,6 +267,7 @@ Main components
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .cd-search-trigger span {
     /* container for the X icon */
     position: absolute;
@@ -237,6 +276,7 @@ Main components
     top: 0;
     left: 0;
 }
+
 .cd-search-trigger span::before,
 .cd-search-trigger span::after {
     /* close icon */
@@ -263,6 +303,7 @@ Main components
     -moz-transition: opacity 0.3s, -moz-transform 0.3s;
     transition: opacity 0.3s, transform 0.3s;
 }
+
 .cd-search-trigger span::before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -270,6 +311,7 @@ Main components
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .cd-search-trigger span::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -277,16 +319,19 @@ Main components
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
 .cd-search-trigger.search-is-visible::before,
 .cd-search-trigger.search-is-visible::after {
     /* hide search icon */
     opacity: 0;
 }
+
 .cd-search-trigger.search-is-visible span::before,
 .cd-search-trigger.search-is-visible span::after {
     /* show close icon */
     opacity: 1;
 }
+
 .cd-search-trigger.search-is-visible span::before {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -294,6 +339,7 @@ Main components
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
 }
+
 .cd-search-trigger.search-is-visible span::after {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -301,6 +347,7 @@ Main components
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .cd-nav-trigger span,
 .cd-nav-trigger span::before,
 .cd-nav-trigger span::after {
@@ -311,6 +358,7 @@ Main components
     width: 24px;
     background: #2e3233;
 }
+
 .cd-nav-trigger span {
     /* line in the center */
     position: absolute;
@@ -321,6 +369,7 @@ Main components
     -moz-transition: background 0.3s 0.3s;
     transition: background 0.3s 0.3s;
 }
+
 .cd-nav-trigger span::before,
 .cd-nav-trigger span::after {
     /* other 2 lines */
@@ -343,23 +392,28 @@ Main components
     -moz-transition: -moz-transform 0.3s 0.3s;
     transition: transform 0.3s 0.3s;
 }
+
 .cd-nav-trigger span::before {
     /* menu icon top line */
     top: -6px;
 }
+
 .cd-nav-trigger span::after {
     /* menu icon bottom line */
     top: 6px;
 }
+
 .cd-nav-trigger.nav-is-visible span {
     /* hide line in the center */
     background: rgba(46, 50, 51, 0);
 }
+
 .cd-nav-trigger.nav-is-visible span::before,
 .cd-nav-trigger.nav-is-visible span::after {
     /* keep visible other 2 lines */
     background: #2e3233;
 }
+
 .cd-nav-trigger.nav-is-visible span::before {
     -webkit-transform: translateX(4px) translateY(-3px) rotate(45deg);
     -moz-transform: translateX(4px) translateY(-3px) rotate(45deg);
@@ -367,6 +421,7 @@ Main components
     -o-transform: translateX(4px) translateY(-3px) rotate(45deg);
     transform: translateX(4px) translateY(-3px) rotate(45deg);
 }
+
 .cd-nav-trigger.nav-is-visible span::after {
     -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
     -moz-transform: translateX(4px) translateY(2px) rotate(-45deg);
@@ -374,11 +429,13 @@ Main components
     -o-transform: translateX(4px) translateY(2px) rotate(-45deg);
     transform: translateX(4px) translateY(2px) rotate(-45deg);
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-nav-trigger {
         display: none;
     }
 }
+
 .cd-primary-nav,
 .cd-primary-nav ul {
     position: fixed;
@@ -405,6 +462,7 @@ Main components
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
 }
+
 .cd-primary-nav a,
 .cd-primary-nav ul a {
     display: block;
@@ -428,6 +486,7 @@ Main components
     -moz-transition: -moz-transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
 }
+
 .cd-primary-nav.is-hidden,
 .cd-primary-nav ul.is-hidden {
     /* secondary navigations hidden by default */
@@ -437,6 +496,7 @@ Main components
     -o-transform: translateX(100%);
     transform: translateX(100%);
 }
+
 .cd-primary-nav.moves-out > li > a,
 .cd-primary-nav ul.moves-out > li > a {
     /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
@@ -447,6 +507,7 @@ Main components
     transform: translateX(-100%);
     opacity: 0;
 }
+
 @media only screen and (max-width: 1169px) {
     .nav-on-left .cd-primary-nav,
     .nav-on-left .cd-primary-nav ul {
@@ -454,24 +515,29 @@ Main components
         left: 0;
     }
 }
+
 .cd-primary-nav .see-all a {
     /* different style for the See all button on mobile and tablet */
     color: crimson;
 }
+
 .cd-primary-nav .cd-nav-gallery .cd-nav-item,
 .cd-primary-nav .cd-nav-icons .cd-nav-item {
     /* items with picture (or icon) and title */
     height: 80px;
     line-height: 80px;
 }
+
 .cd-primary-nav .cd-nav-gallery .cd-nav-item h3,
 .cd-primary-nav .cd-nav-icons .cd-nav-item h3 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .cd-primary-nav .cd-nav-gallery .cd-nav-item {
     padding-left: 90px;
 }
+
 .cd-primary-nav .cd-nav-gallery .cd-nav-item img {
     position: absolute;
     display: block;
@@ -481,9 +547,11 @@ Main components
     top: 50%;
     margin-top: -20px;
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item {
     padding-left: 75px;
 }
+
 
 /*
 .cd-nav-item img {
@@ -498,6 +566,7 @@ Main components
     /* hide description on small devices */
     display: none;
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item::before {
     /* item icon */
     content: '';
@@ -512,30 +581,39 @@ Main components
     background-position: center center;
     background-size: 40px 40px;
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-1::before {
     background-image: url("../img/line-icon-1.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-2::before {
     background-image: url("../img/line-icon-2.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-3::before {
     background-image: url("../img/line-icon-3.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-4::before {
     background-image: url("../img/line-icon-4.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-5::before {
     background-image: url("../img/line-icon-5.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-6::before {
     background-image: url("../img/line-icon-6.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-7::before {
     background-image: url("../img/line-icon-7.svg");
 }
+
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-8::before {
     background-image: url("../img/line-icon-8.svg");
 }
+
 @media only screen and (max-width: 1169px) {
     .cd-primary-nav {
         /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
@@ -551,6 +629,7 @@ Main components
         transition: visibility 0s 0s;
     }
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-primary-nav {
         position: static;
@@ -842,10 +921,12 @@ Main components
         left: 25px;
     }
 }
+
 .has-children > a,
 .go-back a {
     position: relative;
 }
+
 .has-children > a::before,
 .has-children > a::after,
 .go-back a::before,
@@ -862,6 +943,7 @@ Main components
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .has-children > a::before,
 .go-back a::before {
     -webkit-transform: rotate(45deg);
@@ -870,6 +952,7 @@ Main components
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .has-children > a::after,
 .go-back a::after {
     -webkit-transform: rotate(-45deg);
@@ -878,6 +961,7 @@ Main components
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
 @media only screen and (min-width: 1170px) {
     .has-children > a::before,
     .has-children > a::after,
@@ -892,9 +976,11 @@ Main components
         background: #69aa6f;
     }
 }
+
 .has-children > a {
     padding-right: 40px;
 }
+
 .has-children > a::before,
 .has-children > a::after {
     /* arrow goes on the right side - children navigation */
@@ -905,9 +991,11 @@ Main components
     -o-transform-origin: 9px 50%;
     transform-origin: 9px 50%;
 }
+
 .cd-primary-nav .go-back a {
     padding-left: 40px;
 }
+
 .cd-primary-nav .go-back a::before,
 .cd-primary-nav .go-back a::after {
     /* arrow goes on the left side - go back button */
@@ -918,6 +1006,7 @@ Main components
     -o-transform-origin: 1px 50%;
     transform-origin: 1px 50%;
 }
+
 @media only screen and (min-width: 1170px) {
     .has-children > a::before,
     .has-children > a::after {
@@ -979,6 +1068,7 @@ Main components
         left: 1px;
     }
 }
+
 .cd-search {
     position: absolute;
     height: 50px;
@@ -992,10 +1082,12 @@ Main components
     -moz-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
 }
+
 .cd-search form {
     height: 100%;
     width: 100%;
 }
+
 .cd-search input {
     border-radius: 0;
     border: none;
@@ -1010,21 +1102,27 @@ Main components
     -o-appearance: none;
     appearance: none;
 }
+
 .cd-search input::-webkit-input-placeholder {
     color: #c9cbc4;
 }
+
 .cd-search input::-moz-placeholder {
     color: #c9cbc4;
 }
+
 .cd-search input:-moz-placeholder {
     color: #c9cbc4;
 }
+
 .cd-search input:-ms-input-placeholder {
     color: #c9cbc4;
 }
+
 .cd-search input:focus {
     outline: none;
 }
+
 .cd-search.is-visible {
     opacity: 1;
     visibility: visible;
@@ -1032,9 +1130,11 @@ Main components
     -moz-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
 }
+
 .nav-is-fixed .cd-search {
     position: fixed;
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-search {
         height: 120px;
@@ -1046,6 +1146,7 @@ Main components
         font-weight: 300;
     }
 }
+
 
 /*
 .cd-overlay {
@@ -1104,6 +1205,7 @@ Main components
     }
 }
 
+
 /* --------------------------------
 
 support for no js
@@ -1118,12 +1220,14 @@ support for no js
     visibility: visible;
     z-index: 2;
 }
+
 .no-js .cd-search {
     position: relative;
     top: 0;
     opacity: 1;
     visibility: visible;
 }
+
 @media only screen and (min-width: 1170px) {
     .no-js .cd-primary-nav {
         position: absolute;
@@ -1138,6 +1242,7 @@ support for no js
         position: fixed;
     }
 }
+
 
 /*****the diamond *****/
 
@@ -1165,6 +1270,7 @@ support for no js
     transform-origin: 0 100%;
 }
 
+
 /*
 .square-rotate:after {
     position: relative;
@@ -1190,6 +1296,7 @@ support for no js
 */
     /* Rotate Origin */
 }
+
 a.animBtn:link,
 a.animBtn:visited {
     position: relative;
@@ -1211,6 +1318,7 @@ a.animBtn:visited {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+
 a.animBtn:after {
     content: "";
     position: absolute;
@@ -1225,16 +1333,20 @@ a.animBtn:after {
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
+
 a.animBtn:hover {
     color: #333;
     text-shadow: none;
 }
+
 a.animBtn:after {
     height: 420%;
 }
+
 a.animBtn.themeB:after {
     @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
 }
+
 
 /****************
 ***End of animated
@@ -1261,17 +1373,20 @@ button******
     height: 120px;
     background-color: whitesmoke;
 }
+
 .best-seller {
     color: black;
     font-size: 4em;
     text-transform: uppercase;
     line-height: 2;
 }
+
 .three {
     width: 100%;
     height: 700px;
     background-color: whitesmoke;
 }
+
 
 /*
  * ==== losange. the first diamond
@@ -1283,10 +1398,12 @@ button******
     height: 20px;
     background-color: whitesmoke;
 }
+
 h1 {
     position: relative;
     text-align: center;
 }
+
 h1 span {
     background: #fff;
     color: black;
@@ -1294,6 +1411,7 @@ h1 span {
     position: relative;
     z-index: 1;
 }
+
 h1:before {
     background: #ddd;
     content: "";
@@ -1303,15 +1421,19 @@ h1:before {
     top: 50%;
     width: 100%;
 }
+
 h1:before {
     left: 0;
 }
+
 .shoes {
     padding-top: 10%;
 }
+
 .diamond-one {
     margin-left: 18%;
 }
+
 .losange,
 .diaz,
 .diaz .diaz,
@@ -1321,25 +1443,30 @@ h1:before {
     width: 250px;
     height: 250px;
 }
+
 .losange,
 .diaz {
     transform: rotate(45deg) translateY(10px);
 }
+
 .diaz .los1,
 .losange .los1 {
     width: 355px;
     height: 355px;
     transform: rotate(-45deg) translateY(-74px);
 }
+
 .diaz .los1 img,
 .losange .los1 img {
     width: 100%;
     height: 90%;
 }
+
 .four {
     width: 100%;
     height: 500px;
 }
+
 
 /*
 .first {
@@ -1356,6 +1483,7 @@ h1:before {
     padding-top: 12%;
     background-color: black;
 }
+
 .offer {
     color: whitesmoke;
     font-size: 200%;
@@ -1363,11 +1491,13 @@ h1:before {
     font-family: 'Dancing Script', cursive;
     padding-left: 30%;
 }
+
 .caps {
     color: crimson;
     text-transform: uppercase;
     font-size: 10em;
 }
+
 
 /*second column of fourt
 row with offer */
@@ -1379,18 +1509,22 @@ row with offer */
     background-color: gray;
     text-align: center;
 }
+
 .num-offer {
     font-size: 10em;
     color: whitesmoke;
 }
+
 span {
     font-size: 5em;
 }
+
 .off {
     text-transform: uppercase;
     color: whitesmoke;
     font-size: 10em;
 }
+
 
 /*COLLECTIONS PAGE WITH ALL THE PRODUCTS ON SALE*/
 
@@ -1399,27 +1533,33 @@ span {
     height: auto;
     background-color: whitesmoke;
 }
+
 .products {
     list-style-type: none;
     /*    display: inline-block;*/
     /*    padding: 2%;*/
 }
+
 .products img {
     width: 250px;
     /*     padding: 2%;*/
     height: 220px;
 }
+
 .products ul {
     text-decoration: none;
 }
+
 .products ul li {
     padding: 2%;
     display: inline-block;
 }
+
 .prod-detail {
     color: black;
     text-align: center;
 }
+
 .price {
     color: crimson;
     text-align: center;
