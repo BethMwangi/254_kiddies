@@ -1751,11 +1751,12 @@ select {
         border-color: #157539;
         color: #157539; }
     .button.hollow.warning {
-      border: 1px solid #ffae00;
-      color: #ffae00; }
+      border: 1px solid #FF00E9;
+    color: #FF00E9; }
       .button.hollow.warning:hover, .button.hollow.warning:focus {
-        border-color: #805700;
-        color: #805700; }
+        border-color: white;
+          background-color: whitesmoke;
+        color: grey; }
     .button.hollow.alert {
       border: 1px solid #ec5840;
       color: #ec5840; }

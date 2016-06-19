@@ -122,14 +122,16 @@ Main components
 
 .cd-main-content {
     background: #e2e3df;
+  
     min-height: 100vh;
     z-index: 2;
 }
 
 .cd-main-header {
     height: 140px;
+    width: 100%;
     background: #ffffff;
-    z-index: 3;
+    z-index: 30;
 }
 
 .hd-head {
@@ -762,6 +764,8 @@ Main components
         height: 100%;
         top: 0;
         left: 0;
+      
+        
         font-size: 2.2rem;
         font-weight: bold;
         text-align: center;
@@ -845,7 +849,7 @@ Main components
         display: block;
     }
     .cd-primary-nav .cd-secondary-nav ul ul .go-back a {
-        color: transparent;
+        color:black;
     }
     .cd-primary-nav .cd-secondary-nav ul ul .see-all {
         display: block;
@@ -882,7 +886,7 @@ Main components
         margin-bottom: .6em;
     }
     .cd-primary-nav .cd-nav-gallery .cd-nav-item h3 {
-        color: #69aa6f;
+        color: crimson;
         font-weight: bold;
         padding: 0 .4em;
     }
@@ -1082,6 +1086,7 @@ Main components
 .cd-search form {
     height: 100%;
     width: 100%;
+   
 }
 
 .cd-search input {
@@ -1090,7 +1095,11 @@ Main components
     background: #ffffff;
     height: 100%;
     width: 100%;
+ 
+    
     padding: 0 5%;
+  
+    
     box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1294,14 +1303,15 @@ support for no js
 
 .best-seller {
     width: 100%;
-    height: 70px;
+    
+    
     background-color: whitesmoke;
     text-align: center;
 }
 
 .catalogue {
     width: 100%;
-    height: 70px;
+    height: auto;
     background-color: whitesmoke;
 }
 
@@ -1312,7 +1322,8 @@ support for no js
 
 .arrival {
     width: 100%;
-    height: 300px;
+    
+    
 }
 
 .items {
@@ -1359,6 +1370,7 @@ END OF PRODUCT CATALOGUE
 .collection {
     width: 100%;
     height: auto;
+    background-color: whitesmoke;
 }
 
 .products {
