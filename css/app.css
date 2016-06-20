@@ -1471,6 +1471,7 @@ header h1 {
   }
 }
 
+/*
 .cd-trigger {
   position: absolute;
   height: 100%;
@@ -1489,6 +1490,7 @@ header h1 {
   -moz-transition: opacity 0.2s, background-color 0.2s;
   transition: opacity 0.2s, background-color 0.2s;
 }
+*/
 .no-touch .cd-trigger:hover {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -2079,18 +2081,12 @@ a {
 		color:#FF00F0;
 	}
 
-
-
 .footer-list-anchor {
   font: 1.2em "Open Sans", sans-serif;
+        color: #B3B3B3;
 }
 
-
-
 /*NEWSLETTER ROW */
-
-
-
 
 .news {
 width: 100%;
