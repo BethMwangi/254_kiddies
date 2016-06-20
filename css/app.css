@@ -128,7 +128,7 @@ Main components
 }
 
 .cd-main-header {
-    height: 140px;
+    height: 120px;
     width: 100%;
     background: #ffffff;
     z-index: 30;
@@ -162,7 +162,7 @@ Main components
 .cd-logo {
     position: absolute;
     left: 5%;
-    z-index: 10;
+    z-index: 40;
 }
 
 .cd-logo img {
@@ -764,9 +764,7 @@ Main components
         height: 100%;
         top: 0;
         left: 0;
-      
-        
-        font-size: 2.2rem;
+      font-size: 2.2rem;
         font-weight: bold;
         text-align: center;
         line-height: 80px;
@@ -784,7 +782,7 @@ Main components
     .cd-primary-nav .cd-nav-icons > .see-all a:hover {
         background: #2e3233;
         border-color: #2e3233;
-        color: #ffffff;
+        color: crimson;
     }
     .cd-primary-nav .cd-secondary-nav > li {
         /* change the height according to your needs - you can even set height: auto */
@@ -1316,20 +1314,44 @@ support for no js
 }
 
 .new {
-    color: black;
+    color: #2e3233;
     font-size: 4em;
+    font-family: 'Oswald', sans-serif;
 }
 
 .arrival {
     width: 100%;
+   
     
     
 }
+.arrival-prod{
+   width: 100%;
+    background-color: white;
+
+}
+
+
+
+
+
+.prods
+{
+ width: 100%;
+     height: auto;
+     position: relative;
+    margin: 0 auto;
+
+}
+
+
 
 .items {
     width: 100%;
     height: 300px;
 }
+
+
 
 .item {
     height: 400px;
@@ -1359,6 +1381,7 @@ support for no js
     
     
 }
+
 /****SOCIAL MEDIA ICONS 
 ON THE POSITIONED ON THER RIGHT SET TO FIXED *****
 *********/
@@ -1420,7 +1443,10 @@ ON THE POSITIONED ON THER RIGHT SET TO FIXED *****
 }
 
 
+.fa-tumblr{
 
+color: crimson;
+}
 
 
 
@@ -1548,10 +1574,156 @@ ON THE POSITIONED ON THER RIGHT SET TO FIXED *****
 ON THE POSITIONED ON THER RIGHT SET TO FIXED *****
 *********/
 
-/*
 
-END OF PRODUCT CATALOGUE
-*/
+/*THE FOOTER SECTION*/
+
+.footer-list{
+
+width: 100%;
+    height: auto;
+    background-color: #2e3233;
+}
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px
+}
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+
+ul {
+  list-style: none
+}
+a {
+  text-decoration: none
+}
+.generic-anchor {
+    color: #B3B3B3;
+
+}
+
+.generic-anchor:visited {
+		color:#FF00F0;
+	}
+	.generic-anchor:hover {
+		color:#FF00F0;
+	}
+
+
+
+.footer-list-anchor {
+  font: 1.2em "Open Sans", sans-serif;
+}
+
+
+
+/*NEWSLETTER ROW */
+
+
+
+
+.news {
+width: 100%;
+height: 500px;
+    background-image:url(../img/254%20kiddies%20couture.jpg)
+
+}
+
+.newsletter {
+    
+/*    width: 100%;*/
+    height: 500px;
+    ;  
+/*    text-align: center;*/
+    padding-top: 12%;  
+    
+    
+}
+
+.subscribe {
+  position: absolute;
+   left: 10%;
+    
+  margin: auto;
+  width: 400px;
+  height: 70px;
+  background: #fff;
+}
+
+.placeholder {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  font-size: 1.5em;
+  color: #e9625b;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.35s ease;
+}
+
+input[type="text"] {
+  float: left;
+  height: 100%;
+  width: 70%;
+  border: 0;
+  outline: none;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: grey;
+}
+
+button2{
+  float: right;
+  width: 30%;
+  height: 100%;
+  background: #e9625b;
+  border: 2px solid #c6544d;
+  padding: 0;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.75s ease, background 0.35s ease;
+  
+  &:hover {
+    background: #c6544d;
+  }
+}
+
+.move-btn {
+  transform: translateX(-280px);
+}
+
+.placeholder-active {
+  opacity: 1 !important;
+  transform: translateX(120px);
+}
+
+.more-concepts {
+  position: absolute;
+  left: 30%;
+/*  bottom: 20px;*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+  
+    padding-top: 8%;
+    
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #FF00F0;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/*NEWSLETTER ROW */
+
+/*THE FOOTER SECTION*/
+
 
 
 /*COLLECTIONS PAGE WITH ALL THE PRODUCTS ON SALE*/
